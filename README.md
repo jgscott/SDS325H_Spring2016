@@ -1,2 +1,2 @@
-# SDS25H_Spring2016
-Honors Statistics at UT-Austin
+# SDS325H_Spring2016
+SDS 325H (Honors Statistics), Spring 2016, UT-Austin
