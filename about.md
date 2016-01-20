@@ -15,7 +15,7 @@ Office: CBA 6.478
 Office hours: MW 3:30 to 4:30  
 E-mail: james.scott@mccombs.utexas.edu  
 
-TA: Ellen Zippi
-Office hours: TBA  
-E-mail: ellenzippi@gmail.com
+TA: Ellen Zippi  
+Office hours: TBA    
+E-mail: ellenzippi@gmail.com  
 

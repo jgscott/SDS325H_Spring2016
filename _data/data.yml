@@ -1,6 +1,5 @@
 - data: aclfest.csv
 - data: afc.csv
-- data: bacteria.txt
 - data: baseballsalary.csv
 - data: bballbets.csv
 - data: birthwt.csv
@@ -43,7 +42,6 @@
 - data: respir.csv
 - data: rxntime.txt
 - data: salary.csv
-- data: sap.zip
 - data: savings.csv
 - data: sdrapcty.txt
 - data: seatbelts.csv
@@ -58,4 +56,3 @@
 - data: ukgas.csv
 - data: ut2000.csv
 - data: utilities.csv
-- data: visits.csv
