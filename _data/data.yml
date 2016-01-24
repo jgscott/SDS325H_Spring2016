@@ -43,6 +43,7 @@
 - data: rxntime.txt
 - data: salary.csv
 - data: savings.csv
+- data: sclass.csv
 - data: sdrapcty.txt
 - data: seatbelts.csv
 - data: semicon.csv
