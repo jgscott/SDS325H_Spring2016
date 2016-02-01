@@ -16,6 +16,7 @@ This is in a state of continual editing, so I will post the
 * [Chapter 1]({{ site.baseurl }}/files/01-DataExploration.pdf)  
 * [Chapter 2]({{ site.baseurl }}/files/02-FittingEquations.pdf)  
 * [Chapter 3]({{ site.baseurl }}/files/03-PredictableAndUnpredictableVariation.pdf)  
+* [Chapter 4]({{ site.baseurl }}/files/04-GroupingVariables.pdf)  
 
 ### Notes on probability and utility  
 
