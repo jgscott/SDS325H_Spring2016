@@ -48,6 +48,8 @@
 - data: seatbelts.csv
 - data: semicon.csv
 - data: shocks.csv
+- data: simdata03pop.csv
+- data: simdata03samp.csv
 - data: spam-fit.csv
 - data: spam-test.csv
 - data: springbok.csv
