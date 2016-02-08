@@ -1,2 +1,3 @@
 - r: montecarlo.R
+- r: prediction_interval.R
 - r: titanic.R
