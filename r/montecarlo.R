@@ -140,6 +140,7 @@ hist(mysim, breaks=200)
 
 # compare timings
 
+runif(10000)
 # 10000 simulated uniforms, the slow way
 system.time({
 	result <- foreach(i = 1:10000, .combine = 'c') %do% {

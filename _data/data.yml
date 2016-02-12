@@ -30,6 +30,7 @@
 - data: hubble.txt
 - data: infmort.csv
 - data: kidney.csv
+- data: LifeExpectancy.csv
 - data: marketmodel.csv
 - data: milk.csv
 - data: mtdna.csv
