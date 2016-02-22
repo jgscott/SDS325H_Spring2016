@@ -10,6 +10,7 @@
 - data: carauction.csv
 - data: cars.csv
 - data: casandie.txt
+- data: cheese.csv
 - data: chymotrypsin.csv
 - data: climate.csv
 - data: congress109.csv
@@ -26,6 +27,7 @@
 - data: georgia2000.csv
 - data: gonefishing.csv
 - data: googleflu.csv
+- data: heights.csv
 - data: house.csv
 - data: hubble.txt
 - data: infmort.csv
@@ -34,6 +36,7 @@
 - data: marketmodel.csv
 - data: milk.csv
 - data: mtdna.csv
+- data: newspapers.csv
 - data: oil.txt
 - data: orings.csv
 - data: peakdemand.csv
