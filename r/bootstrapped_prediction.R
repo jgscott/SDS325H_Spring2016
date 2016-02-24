@@ -7,22 +7,21 @@ plot(Sunday~Daily,data=newspapers)
 lm1 = lm(Sunday~Daily,data=newspapers)
 abline(lm1)
 
-N = nrow(newspapers)
-
 
 # Values of x where we want to predict
+# Here, just one x
 xstar = data.frame(Daily=1000)
 
 # Bootstrapped prediction intervals
+# Key idea: simulate future data points
 NMC = 10000
 boot_pred = do(NMC)*{
   
-  # Fit a model to a bootstrapped sample
+  # Step 1a: Fit a model to a bootstrapped sample
   lmsub = lm(Sunday~Daily,data=resample(newspapers))
   
-  # Form the prediction from the bootstrapped model estimate
-  # This step bakes in parameter uncertainty
-  yhat = predict.lm(lmsub,newdata=xstar)
+  # Step 1b: Form the plug-in prediction from the bootstrapped model.
+  yhat = predict(lmsub,newdata=xstar)
   
   # Resample the residuals from the bootstrapped model
   # This step bakes in residual uncertainty
@@ -33,12 +32,15 @@ boot_pred = do(NMC)*{
   ystar
 }
 
+# Look at the first few lines
 head(boot_pred)
 
 # Our sampling distribution for our prediction
 hist(boot_pred$X1)
 sd(boot_pred$X1)
 
+# Boot-strapped prediction interval
+confint(boot_pred$X1, level=0.95)
 
 ###
 ## Now for many future points at once
@@ -52,12 +54,13 @@ m = nrow(xstar)  # number of points to predict
 NMC = 10000
 boot_pred = do(NMC)*{
 	
-	# Fit a model to a bootstrapped sample
-	lmsub = lm(Sunday~Daily,data=resample(newspapers))
-	
-	# Form the prediction from the bootstrapped model estimate
-	# This step bakes in parameter uncertainty
-	yhat = predict.lm(lmsub,newdata=xstar)
+  # Step 1a: Fit a model to a bootstrapped sample
+  lmsub = lm(Sunday~Daily,data=resample(newspapers))
+  
+  # Step 1b: Form the plug-in prediction from the bootstrapped model.
+  # This time, ystar is a vector corresponding to predictions
+  # for all the values in xstar.
+  yhat = predict(lmsub,newdata=xstar)
 	
 	# Resample the residuals from the bootstrapped model
 	# This step bakes in residual uncertainty
@@ -68,18 +71,25 @@ boot_pred = do(NMC)*{
 	ystar
 }
 
-# Calculate standard error of prediction
+head(boot_pred)
+
+# Plug-in prediction
 yhat = predict(lm1, newdata=xstar)
+
+# Prediction standard errors
 yse = apply(boot_pred, 2, sd)
 
-plot(Sunday~Daily,data=newspapers, bty='n',
-	xlab="Circulation on Monday to Friday (thousands of papers)",
-	ylab="Circulation on Sunday (thousands of papers)",
-	main='', cex.lab=0.9, cex=0.5, pch=19, col='blue')
-abline(lm1)
-lines(xstar$Daily, yhat + yse, col='red')
-lines(xstar$Daily, yhat - yse, col='red')
+# 95% prediction interval for every point
+ci_bounds = apply(boot_pred, 2, quantile, probs=c(0.025, 0.975))
 
+# View the bounds
+ci_bounds
+
+# View the bounds in columns
+t(ci_bounds)
+
+# Stack these columns next to the corresponding values of xstar for easy reference
+cbind(xstar, t(ci_bounds))
 
 # Compare the half-width of interval versus that of the naive prediction interval
 # Notice the Monte Carlo variability (try with NMC = 100000)
