@@ -4,4 +4,5 @@
 - r: prediction_interval.R
 - r: race_boot.R
 - r: residual_resampling.R
+- r: saratoga.R
 - r: titanic.R
