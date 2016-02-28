@@ -59,6 +59,13 @@ mymax = optim(c(0,0), target, x = chym$Conc, y = chym$Rate, method='Nelder-Mead'
 mymax  # see ?optim
 theta = mymax$par
 
+
+# Optimize the function
+chym_boot = resample(chym)
+mymax = optim(c(0,0), target, x = chym_boot$Conc, y = chym_boot$Rate, method='Nelder-Mead')
+mymax  # see ?optim
+theta = mymax$par
+
 # Data and fitted curve
 plot(Rate ~ Conc, data=chym)
 curve(mmpredict(x, exp(theta[1]), exp(theta[2])), add=TRUE)
