@@ -1,4 +1,5 @@
 - r: bootstrapped_prediction.R
+- r: cheese_demand.R
 - r: gonefishing.R
 - r: montecarlo.R
 - r: prediction_interval.R
