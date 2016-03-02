@@ -3,7 +3,9 @@
 - r: gonefishing.R
 - r: montecarlo.R
 - r: prediction_interval.R
+- r: predimed_perm.R
 - r: race_boot.R
+- r: rebound.R
 - r: residual_resampling.R
 - r: saratoga.R
 - r: titanic.R
