@@ -20,6 +20,7 @@ This is in a state of continual editing, so I will post the
 * [Chapter 5]({{ site.baseurl }}/files/05-QuantifyingUncertainty.pdf)  
 * [Chapter 6]({{ site.baseurl }}/files/06-MultipleRegression.pdf)  
 * [Chapter 7]({{ site.baseurl }}/files/07-Probability.pdf)  
+* [Chapter 8]({{ site.baseurl }}/files/08-ParametricModels.pdf)  
 
 
 
