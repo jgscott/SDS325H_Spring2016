@@ -3,7 +3,10 @@
 - r: georgia_bug.R
 - r: georgia.R
 - r: gonefishing.R
+- r: hw7.R
+- r: montecarlo_normal.R
 - r: montecarlo.R
+- r: parametric_probmodels.R
 - r: prediction_interval.R
 - r: predimed_perm.R
 - r: profs.R
