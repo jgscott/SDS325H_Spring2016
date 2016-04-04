@@ -1,3 +1,4 @@
+- r: bivariate_normal.R
 - r: bootstrapped_prediction.R
 - r: cheese_demand.R
 - r: georgia_bug.R

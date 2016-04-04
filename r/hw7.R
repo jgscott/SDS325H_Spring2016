@@ -1,7 +1,7 @@
 currentwealth = 1000
 rounds = 10000
 
-frac = 0.02
+frac = 0.04
 runningwealth = rep(0, rounds) # a placeholder for the result
 
 # Simulate 10000 rounds of betting
