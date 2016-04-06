@@ -8,6 +8,7 @@
 - r: montecarlo_normal.R
 - r: montecarlo.R
 - r: parametric_probmodels.R
+- r: portfolio.R
 - r: prediction_interval.R
 - r: predimed_perm.R
 - r: profs.R
