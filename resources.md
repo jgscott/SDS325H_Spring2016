@@ -22,7 +22,8 @@ This is in a state of continual editing, so I will post the
 * [Chapter 7]({{ site.baseurl }}/files/07-Probability.pdf)  
 * [Chapter 8]({{ site.baseurl }}/files/08-ParametricModels.pdf)  
 * [Chapter 9]({{ site.baseurl }}/files/09-BivariateNormal.pdf)  
-
+* [Chapter 10]({{ site.baseurl }}/files/10-UtilityAndDecisionMaking.pdf)  
+* [Chapter 11]({{ site.baseurl }}/files/11-NormalRegressionModel.pdf)  
 
 
 ### Other readings
