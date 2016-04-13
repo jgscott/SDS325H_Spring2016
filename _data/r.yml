@@ -15,5 +15,6 @@
 - r: race_boot.R
 - r: rebound.R
 - r: residual_resampling.R
+- r: saratoga_nlrm.R
 - r: saratoga.R
 - r: titanic.R
