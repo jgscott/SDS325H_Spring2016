@@ -34,5 +34,7 @@ sum(perm3$r.squared > 0.5185)/10000
 # show transformation of r2 into F statistic
 fstat = (perm3$r.squared - rsquared(lm2))/(1-perm3$r.squared) * (nrow(SaratogaHouses) - 8)/(2)
 
+
 hist(fstat, 50, prob=TRUE)
-curve(df(x, 2, nrow(SaratogaHouses) - 8), add=TRUE)
+curve(df(x, nrow(SaratogaHouses) - 8, 2), add=TRUE)
+

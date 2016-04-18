@@ -24,6 +24,7 @@ This is in a state of continual editing, so I will post the
 * [Chapter 9]({{ site.baseurl }}/files/09-BivariateNormal.pdf)  
 * [Chapter 10]({{ site.baseurl }}/files/10-UtilityAndDecisionMaking.pdf)  
 * [Chapter 11]({{ site.baseurl }}/files/11-NormalRegressionModel.pdf)  
+* [Chapter 12]({{ site.baseurl }}/files/12-GeneralizedLinearModels.pdf)  
 
 
 ### Other readings

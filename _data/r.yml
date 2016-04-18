@@ -1,6 +1,8 @@
+- r: bballbets.R
 - r: bivariate_normal.R
 - r: bootstrapped_prediction.R
 - r: cheese_demand.R
+- r: flutrends.R
 - r: georgia_bug.R
 - r: georgia.R
 - r: gonefishing.R
