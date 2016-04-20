@@ -3,8 +3,8 @@ library(MASS)
 
 # Read in the data, and tell R what column the row labels are in
 # That way it doesn't think week is a categorical variable
-flutrends = read.csv("flutrends.csv", header=TRUE, row.names=1)
-flutrends2012 = read.csv("flutrends2012.csv", header=TRUE, row.names=1)
+flutrends = read.csv("../data/flutrends.csv", header=TRUE, row.names=1)
+flutrends2012 = read.csv("../data/flutrends2012.csv", header=TRUE, row.names=1)
 
 # Which observations are actually present?
 # t = which(!is.na(flutrends$cdcflu))
@@ -45,6 +45,10 @@ lines(yhat.u2, col='red', lty='dashed')
 
 # Predictions do not adequately reflect the over dispersion
 # This is a function of the mean-variance relationship of the Poisson
+plot(cdcflu~fitted(glm2), data=na.omit(flutrends), xlim=c(800,1200),
+     ylim=c(500,1500))
+points(1000, 1000, col='red', pch=19)
+segments(x0=1000, y0=1000 - 2*sqrt(1000), y1 = 1000+2*sqrt(1000), col='red')
 
 
 # Let's try a negative-binomial model

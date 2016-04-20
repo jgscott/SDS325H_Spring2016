@@ -1,9 +1,9 @@
 library(mosaic)
 
-bballbets = read.csv("bballbets.csv", header=TRUE)
+bballbets = read.csv("../data/bballbets.csv", header=TRUE)
 
 plot(jitter(homewin,0.2) ~ spread, data=bballbets,
-	xlab='Home team victory?', ylab='Point spread',
+	ylab='Home team victory?', xlab='Point spread',
 	pch=19, col=rgb(0,0,0,0.2), las=1)
 
 # Look at the empirical win frequency within "buckets"
