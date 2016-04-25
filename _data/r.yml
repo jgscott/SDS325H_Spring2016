@@ -1,15 +1,21 @@
 - r: bballbets.R
 - r: bivariate_normal.R
+- r: bloodpressure.R
 - r: bootstrapped_prediction.R
 - r: cheese_demand.R
+- r: cmc.R
+- r: colon.R
 - r: flutrends.R
+- r: gardasil.R
 - r: georgia_bug.R
 - r: georgia.R
 - r: gonefishing.R
 - r: hw7.R
 - r: montecarlo_normal.R
 - r: montecarlo.R
+- r: mtdna.R
 - r: parametric_probmodels.R
+- r: polls.R
 - r: portfolio.R
 - r: prediction_interval.R
 - r: predimed_perm.R
@@ -20,3 +26,4 @@
 - r: saratoga_nlrm.R
 - r: saratoga.R
 - r: titanic.R
+- r: ut2000-mm.R

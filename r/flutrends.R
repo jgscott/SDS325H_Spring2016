@@ -63,7 +63,7 @@ yhat.l3 = exp(post3$fit - 1.96*post3$se.fit)
 yhat.u3 = exp(post3$fit + 1.96*post3$se.fit)
 
 
-plot(flutrends$cdcflu, col='blue', pch=19)
+plot(flutrends$cdcflu, col='blue', pch=19, ylim=c(0,7000))
 lines(yhat3, col='red')
 lines(yhat.l3, col='red', lty='dashed')
 lines(yhat.u3, col='red', lty='dashed')

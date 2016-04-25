@@ -14,6 +14,7 @@
 - data: cheese.csv
 - data: chymotrypsin.csv
 - data: climate.csv
+- data: cmc.csv
 - data: congress109.csv
 - data: congress109members.csv
 - data: cps85.csv
@@ -24,6 +25,7 @@
 - data: flutrends.csv
 - data: flutrends2012.csv
 - data: gala.csv
+- data: gardasil.csv
 - data: gdpgrowth.csv
 - data: georgia2000.csv
 - data: gonefishing.csv
