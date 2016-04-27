@@ -25,15 +25,7 @@ summary(lm1)
 boxplot(resid(lm1) ~ litter, data=mtdna)
 
 
-# Soln. 1: fit an ordinary linear model
-# with dummy variables for litter
-lm2 = lm(log2(copy) ~ tissue + litter, data=mtdna)
-summary(lm2)
-
-# Problem: we're not interested in the "litter 1 case" tissue coefficients.  We want some average effect.
-
-
-# Soln. 2: fit a mixed model that partially pools:
+# Fit a mixed model that partially pools:
 # litter-level effects
 hlm1 = lmer(log2(copy) ~ tissue  + (1 | litter), data=mtdna)
 summary(hlm1)
