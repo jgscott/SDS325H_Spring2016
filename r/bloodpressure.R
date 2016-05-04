@@ -44,7 +44,7 @@ summary(lm2)
 
 # Better: a hierarchical model that addresses the "compound error term"
 # (1 | subject) says: introduce a random intercept term for each subject
-hlm1 = lmer(systolic ~ factor(treatment) + (1 | subject), data=bloodpressure)
+hlm1 = lmer(systolic ~ treatment + (1 | subject), data=bloodpressure)
 summary(hlm1)
 r1 = ranef(hlm1, condVar = TRUE)
 dotplot(r1)

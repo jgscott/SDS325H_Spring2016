@@ -35,7 +35,7 @@ dotplot(r1)
 # We can also account for animal-level correlations
 boxplot(log2(copy) ~ animal:litter, data=mtdna)
 
-hlm2 = lmer(log2(copy) ~ tissue + (animal | litter), data=mtdna)
+hlm2 = lmer(log2(copy) ~ tissue + (1 | litter) + (animal | litter), data=mtdna)
 summary(hlm2)
 
 r2 = ranef(hlm2, condVar=TRUE)
